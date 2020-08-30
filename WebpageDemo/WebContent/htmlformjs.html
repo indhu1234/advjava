@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validate()
+{
+	var x=document.forms["form1"]["name"].value;
+	if(x=="")
+		{
+		alert("NAME MUST BE FILLED out");
+	return false;
+		}
+	confirm("Everything is fine");
+	}
+function add()
+{
+	var a=parseInt(document.getElementById('t1').value);
+	var b=parseInt(document.getElementById('t2').value);
+	c=a+b;
+	alert("Result:"+c);
+	}
+</script>
+</head>
+<body>
+Enter any integer value : <input type="text" id="t1">
+<br>
+Enter another integer value : <input type="text" id="t2"><br>
+<input type="submit" value="Addition" onclick="add()">
+<pre>
+<form name="form1">
+Enter your name : <input type="text" name="name">
+Enter your address : <textarea rows="5" cols="20" name="addr"></textarea>
+Enter your Contact number : <input type="number" name="num">
+<input type="submit"  value="Sign In" onclick="validate()">
+</form>
+</pre>
+</body>
+</html>
