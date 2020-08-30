@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+   <display-name>Servlet Security Example</display-name>
+     
+   <!-- Servlet Security 'XML' Based Configuration -->
+    <!-- <security-constraint>
+   		<web-resource-collection>
+   			<web-resource-name>Simple Web Resource</web-resource-name>
+   			<url-pattern>/secured</url-pattern>
+   		</web-resource-collection>
+   		<auth-constraint>
+   			<role-name>secured</role-name>
+   		</auth-constraint>
+   </security-constraint>  -->
+   
+   <!-- Authentication Method Configuration -->
+   <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>default</realm-name>
+    </login-config>
+</web-app>
