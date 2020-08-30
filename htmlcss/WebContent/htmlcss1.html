@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<STYLE>
+div
+{
+width:100px;
+height:100px;
+background:red;
+ 
+-webkit-animation-name:myfirst; /* Chrome */
+-webkit-animation-duration:5s; /* Chrome */ 
+}
+#c1
+{
+   font-size:40px;
+   color:white;
+   display: block;
+}
+#c2
+{
+   font-size:30px;
+   color:orange;
+}
+#c3
+{
+   font-size:40px;
+   color:maroon;
+}
+p
+{
+width:100px;
+height:100px;
+background:blue;
+
+-webkit-animation-name:myfirst; /* Chrome */
+-webkit-animation-duration:5s; /* Chrome */ 
+}
+
+
+ @-webkit-keyframes myfirst /* Chrome */
+{
+0%  {background:red;}
+20% {background:green; }
+40% {background:yellow;}
+80% {background:red;}
+} 
+</STYLE>
+
+</head>
+<body>
+<DIV id="c1">Div tag</DIV>
+<div> div tag 2</div>
+<div id="c2">div tag 3</div>
+<p id="c3">paragraph 1</p>
+</body>
+</html> 
