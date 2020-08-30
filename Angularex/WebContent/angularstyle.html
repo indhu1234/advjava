@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript">
+var app=angular.module("colors",[])
+app.controller("ctr",function($scope){
+	$scope.color="red";
+	
+});
+</script>
+</head>
+<body ng-app="colors">
+<div ng-controller="ctr">
+<input type="text" ng-model="color" name="t1" />
+color is : {{color}}
+<br>
+<input type="button" value="Click" ng-model="color" onclick="alert(t1)" />
+</div>
+<br>
+<div ng-controller="ctr" style="background-color:{{color}}">NIIT
+</div>
+
+</body>
+</html>

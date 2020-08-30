@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="logincontroller" method="post">
+<form action="logincontroller" method="get">
 
 Enter User Name : <input type="text" name="username"> <BR>
 Enter Password : <input type="password" name="password"> <BR>

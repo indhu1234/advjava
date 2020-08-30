@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+<meta charset="ISO-8859-1">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
+ <script src="lib/ang1.js"></script>
+
+<title>Insert title here</title>
+<!-- <script src="js/angularjsdemo.js"></script> -->
+<script type="text/javascript">
+var app=angular.module("demoApp",[]);
+app.controller("demoCtrl",function($scope){
+$scope.book="Java";
+$scope.author="Niit";
+});
+</script>
+</head>
+<body ng-app="demoApp">
+<div ng-controller="demoCtrl">
+<input type="text" ng-model="book" />
+<input type="text" ng-bind="book" />
+
+<table>
+<tr>
+<td>Book Name : </td>
+ 
+<td ng-bind="book"></td>
+</tr>
+<tr>
+<td> Author Name :</td>
+<td ng-bind="author"></td>
+</tr>
+</table>
+
+
+</div>
+</body>
+</html>

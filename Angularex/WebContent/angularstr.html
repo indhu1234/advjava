@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript">
+var myapp=angular.module("demo1",[])
+myapp.controller("myctrl",function($scope)
+		{
+           $scope.mes="Welcome";	
+		});
+myapp.controller("ctrl1",function($scope)
+		{
+	       $scope.a="Hi!!!";
+		});
+myapp.controller("ctrl2",function($scope)
+		  {
+			$scope.color="green;"
+		});
+	
+
+</script>
+</head>
+<body ng-app="demo1" ng-init=firstname="AAAA";lastname="B">
+
+FirstName : {{firstname}}
+LastName : {{lastname}}
+<div ng-controller="myctrl">
+{{mes}}
+
+</div>
+<div ng-controller="ctrl1">
+{{a}}
+</div>
+<div ng-controller="ctrl2" style="background-color:{{color}} width=200 height=1000"> 
+<span style="background-color:{{color}}">
+Hello</span>
+</div>
+</body>
+</html>
